@@ -1,0 +1,280 @@
+/* Explore Section */
+.explore{
+    margin-top: max(5%, 30px);
+    width: 95%;
+    justify-self: center;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2%;
+        .left{
+            h2 {
+                font-size: clamp(20px, 3vw, 35px);
+                font-weight: bold;
+                color: #333;
+            }
+            p {
+                font-size: clamp(13px, 1.5vw, 18px);
+                color: #777;
+            }
+        }
+        .right{
+            align-content: end;
+            width: 50%;
+            font-size: clamp(13px, 1.5vw, 18px);
+            color: grey;
+
+        }
+    }
+    .tabs {
+        margin: max(3%, 20px) 0;
+        display: flex;
+        justify-content: space-between;
+        .tabs-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            .tab {
+                padding: 10px 15px;
+                border-radius: 8px;
+                cursor: pointer;
+                border: none;
+                font-size: clamp(12px, 1.5vw, 16px);
+                background: #f1f1f1;
+                color: #333
+            }
+            .active {
+                background: #000;
+                color: #fff;
+            }
+        }
+        .dropdown{
+            display: none;
+            background: black;
+            color: white;
+        }
+        button{
+            border: none;
+            background: #f1f1f1;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        height: fit-content;
+        .card {
+            margin: clamp(10px, 40vw, 5%);
+            background: white;
+            border-radius: 15px;
+            text-align: left;
+            position: relative;
+            img {
+                width: 100%;
+                border-radius: 15px;
+                object-fit: cover;
+            }
+            .rating {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background: rgba(255, 255, 255, 0.8);
+                color: black;
+                font-size: 12px;
+                padding: 5px 10px;
+                border-radius: 15px;
+                font-weight: bold;
+                i{
+                    color: gold;
+                }
+            }
+            
+            .row{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .location {
+                    font-size: 14px;
+                    color: gray;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    font-size: clamp(12px, 1.5vw, 16px);;
+                    h3 {
+                        margin: 10px 0 5px;
+                        color: var(--black);
+                        font-weight: bolder;
+                    }
+                    i{
+                        color: var(--blue);
+                    }
+                }
+                .price {
+                    font-weight: bold;
+                    color: var(--black);
+                    font-size: clamp(15px, 1.5vw, 20px);
+                    span {
+                        font-size: 12px;
+                        color: gray;
+                    }
+                }
+            }
+        }                
+    }
+    .show-more{
+        color: var(--black);
+        background-color: white;
+        padding: 10px;
+        border: 1px solid rgb(230, 230, 230);
+        border-radius: 10px;
+        margin-left: 50%;
+        margin-top: 20px;
+        transform: translateX(-50%);
+    }
+}
+
+/* Adventure Section */
+.adventure{
+    margin-top: max(5%, 50px);
+    justify-self: center;
+    width: 95%;
+    .heading{
+        margin-bottom: max(3%, 20px);
+        text-align: center;
+        h2{
+            font-size: var(--heading-size);
+            color: var(--black);
+            margin-bottom: 0.6%;
+        }
+        span{
+            /* margin-top: 13%; */
+            font-size: var(--content-size);
+            color: grey;
+        }
+    }
+    .row{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        .stamp {
+            max-width: 250px;
+            margin: clamp(10px, 40vw, 5%);
+            background: white;
+            border-radius: 10px;
+            padding: clamp(6px, 1vw ,15px);
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            border: 2px dashed #ccc;
+        }
+
+        .stamp img {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        i {
+            position: absolute;
+            top: clamp(-20px, 8vw, -10px);
+            left: clamp(-20px, 8vw, -10px);
+            background: grey;
+            color: white;
+            font-size: 15px;
+            padding: 10px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: clamp(40px, 5.5vw ,50px);
+            height: clamp(40px, 5.5vw ,50px);
+            border: 5px solid white;
+            font-weight: bold;
+        }
+
+        .stamp h3 {
+            font-size: 14px;
+            margin-top: 8px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            color: #333;
+        }
+    }
+}
+
+
+@media (width <= 780px) {
+    .explore{
+        .tabs{
+            .dropdown{
+                display: block;
+            }
+            .tabs-container{
+                display: none;
+            }
+        }
+        .grid{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            .card > .row{
+                .price{font-size: clamp(15px, 2.5vw, 18px);}
+                .location{
+                    font-size: clamp(12px, 2.5vw, 14px);
+                }
+            }
+        }        
+    }
+}
+
+@media (width <= 665px) {
+    .explore{
+        .container{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            .right{
+                margin-top: 20px;
+                width: 100%;
+            }
+        }
+    }
+    .adventure{
+        .row{
+            grid-template-rows: 2;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            .stamp{
+                max-width: clamp(150px, 40vw, 200px);
+            }
+        }
+    }
+}
+
+@media (width < 400px) {
+    .explore > .grid{
+        gap: 0px;
+        .card {
+            border: 0.5px solid rgb(237, 237, 237);
+            border-radius: 10px;
+            padding-bottom: 10px;
+            img{
+                border-radius: 10px;
+            }
+            .rating{
+                top: 5px; 
+                right: 5px;
+                font-size: 10px;
+                /* padding: 5px; */
+            }
+            .row{
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    }
+}

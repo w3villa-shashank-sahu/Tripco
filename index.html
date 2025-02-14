@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/navbar_hero.css">
+    <link rel="stylesheet" href="styles/popular_memories.css">
+    <link rel="stylesheet" href="styles/explore_adventure.css">
+    <link rel="stylesheet" href="styles/video_footer.css">
+</head>
+<body>
+
+    <!-- Nav bar -->
+    <nav class="navbar wrapper">
+        <a href="#" class="logo">Tripco</a>
+
+        <!-- Hamburger Menu -->
+        <span class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </span>
+
+        <!-- Navigation Links -->
+        <div class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="#">Ticket</a>
+            <a href="#">Explore</a>
+            <a href="#">Activity</a>
+        </div>
+
+        <!-- Sign In & Sign Up -->
+        <div class="nav-buttons">
+            <a href="#" class="sign-in">Sign in</a>
+            <a href="#" class="sign-up">Sign Up</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero wrapper">
+        <!-- Text Content -->
+        <div class="hero-content">
+            <h1>Explore the whole world and enjoy its beauty</h1>
+            <p>Find and write about your experiences around the world.</p>
+        </div>
+
+        <!-- Search Box -->
+        <div class="search-box">
+            <!-- Tab Navigation -->
+            <div class="tab-section">
+                <div class="tabs">
+                    <div class="tab active">Hostelry</div>
+                    <div class="tab">Flights</div>
+                    <div class="tab">Bus & Shuttle</div>
+                    <div class="tab">Cars</div>
+                </div>
+                <div class="last-search">
+                    Last Searching <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+
+            <!-- Search Fields -->
+            <div class="search-fields">
+                <div class="field">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="text" placeholder="Bali, Indonesia">
+                </div>
+                <div class="field">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <input type="text" placeholder="Sat, 2 Dec 2022">
+                </div>
+                <div class="field">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <input type="text" placeholder="Sun, 3 Dec 2022">
+                </div>
+                <div class="field">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="1 Room, 2 Guests">
+                </div>
+                <button class="search-btn">
+                    Search <i class="fa-solid fa-search"></i>
+                </button>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <!-- Popular places section -->
+    <div class="popular-section wrapper">
+        <div class="container">
+            <div class="left">
+                <h2>Popular Place</h2>
+                <p>Let's enjoy this heaven on earth</p> 
+            </div>
+            <div class="right">
+                Many places are very famous, beautiful, clean, and will give a very deep impressino to visitors ad will make them come back
+            </div>
+        </div>
+
+        <div class="card-container">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="https://img.freepik.com/free-photo/beautiful-seaside-landscape_23-2150423927.jpg?t=st=1739364647~exp=1739368247~hmac=c47b15a78308c2c6685a4a52dd3490986d826dd626cd5b3b46d91d1f9ae241ad&w=1380" alt="Mindanao">
+                <span class="discount-badge">20% OFF</span>
+                <div class="card-content">
+                    <div class="card-title">SC. Mindanao</div>
+                    <div class="card-subtitle">
+                        <i class="fa-solid fa-location-dot"></i> Mindanao, Philippines
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="https://img.freepik.com/free-photo/beautiful-seaside-landscape_23-2150423927.jpg?t=st=1739364647~exp=1739368247~hmac=c47b15a78308c2c6685a4a52dd3490986d826dd626cd5b3b46d91d1f9ae241ad&w=1380" alt="Disneyland Tokyo">
+                <span class="discount-badge">25% OFF</span>
+                <div class="card-content">
+                    <div class="card-title">Disneyland Tokyo</div>
+                    <div class="card-subtitle">
+                        <i class="fa-solid fa-location-dot"></i> Tokyo, Japan
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="https://img.freepik.com/free-photo/beautiful-seaside-landscape_23-2150423927.jpg?t=st=1739364647~exp=1739368247~hmac=c47b15a78308c2c6685a4a52dd3490986d826dd626cd5b3b46d91d1f9ae241ad&w=1380" alt="Thousand Island">
+                <span class="discount-badge">20% OFF</span>
+                <div class="card-content">
+                    <div class="card-title">Thousand Island</div>
+                    <div class="card-subtitle">
+                        <i class="fa-solid fa-location-dot"></i> Java, Indonesia
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <img src="https://img.freepik.com/free-photo/beautiful-seaside-landscape_23-2150423927.jpg?t=st=1739364647~exp=1739368247~hmac=c47b15a78308c2c6685a4a52dd3490986d826dd626cd5b3b46d91d1f9ae241ad&w=1380" alt="Basilika Santo">
+                <span class="discount-badge">30% OFF</span>
+                <div class="card-content">
+                    <div class="card-title">Basilika Santo</div>
+                    <div class="card-subtitle">
+                        <i class="fa-solid fa-location-dot"></i> Venice, Italy
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Memories Section -->
+    <div class="memories-section wrapper">
+        <div class="heading">
+            <h2>Travel to make sweet memories</h2>
+            <span>Find trips that fit a flexible lifestyle</span>
+        </div>
+        <div class="row">
+            <div class="text-content">
+                <div class="feature">
+                    <span class="_1">01</span>
+                    <h4>Find trips that fit your freedom</h4>
+                    <p>Travelling offers freedom and flexibility, solitude and spontaneity, and privacy and purpose.</p>
+                </div>
+    
+                <div class="feature">
+                    <span class="_2">02</span>
+                    <h4>Get back to nature by travel</h4>
+                    <p>The world is a playground and you can finally explore Mother Nature's inimitable canvas.</p>
+                </div>
+    
+                <div class="feature">
+                    <span class="_3">03</span>
+                    <h4>Reignite those travel tastebuds</h4>
+                    <p>There are infinite reasons to love travel, one of them being the food, glorious food.</p>
+                </div>
+    
+                <button href="#" class="btn">Start your explore</button>
+            </div>
+            <div class="image-container">
+                <img src="https://img.freepik.com/free-photo/mountain-landscape-with-green-trees_23-2148215217.jpg?t=st=1739429651~exp=1739433251~hmac=dfca681ac30bc5fa66e3b342963be0e0a2ec6440017ec605c480734bb925455b&w=740" alt="Travel Image">
+                
+                <div class="review-card review1">
+                    <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="User">
+                    <div>
+                        <strong>Komelia Diana</strong>
+                        <div class="rating">⭐ 4.9</div>
+                    </div>
+                </div>
+    
+                <div class="review-card review2">
+                    <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="User">
+                    <div>
+                        <strong>Joe Zefiano</strong>
+                        <div class="rating">⭐ 4.9</div>
+                    </div>
+                </div>
+    
+                <div class="review-card review3">
+                    <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="User">
+                    <div>
+                        <strong>Hakiel Adam</strong>
+                        <div class="rating">⭐ 4.9</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Explore Section -->
+    <div class="explore wrapper">
+       <div class="container">
+            <div class="left">
+                <h2>Explore more</h2>
+                <p>Let's go on an adventure</p> 
+            </div>
+            <div class="right">
+                All-inclusive vacations and flights to the Caribean, Indonesian, and more than 1,300 destinations worldwide. Let's explore now.
+            </div>
+       </div>
+       <div class="tabs">
+            <div class="tabs-container">
+                <button class="tab active">Popular Destination</button>
+                <button class="tab">Islands</button>
+                <button class="tab">Surfing</button>
+                <button class="tab">National Parks</button>
+                <button class="tab">Lake</button>
+                <button class="tab">Beach</button>
+                <button class="tab">Camp</button>
+            </div>
+            <button class="tab dropdown">Popular Destination <i class="fa-solid fa-caret-down"></i></button>
+            <button>
+                Filter <i class="fa-solid fa-sliders"></i>
+            </button>
+       </div>
+       <div class="grid">
+            <div class="card">
+                <img src="https://img.freepik.com/free-photo/countryside-houses-near-idyllic-lake-near-mountains_23-2148153677.jpg?t=st=1739446702~exp=1739450302~hmac=d0d596f9f3df0daf260eed2be81984d134823f3a73bdb2150505521d1a8a99ee&w=1380" alt="Osaka Castle">
+                <div class="rating"><i class="fa-solid fa-star"></i> 4.9</div>
+                <div class="row">
+                    <div class="location">
+                        <h3>Osaka Castle</h3>
+                        <span><i class="fa-solid fa-location-dot"></i> Osaka, Japan</span>
+                    </div>
+                    <div class="price">$156 <span>/Pax</span></div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://img.freepik.com/free-photo/countryside-houses-near-idyllic-lake-near-mountains_23-2148153677.jpg?t=st=1739446702~exp=1739450302~hmac=d0d596f9f3df0daf260eed2be81984d134823f3a73bdb2150505521d1a8a99ee&w=1380" alt="Osaka Castle">
+                <div class="rating"><i class="fa-solid fa-star"></i> 4.9</div>
+                <div class="row">
+                    <div class="location">
+                        <h3>Osaka Castle</h3>
+                        <span><i class="fa-solid fa-location-dot"></i> Osaka, Japan</span>
+                    </div>
+                    <div class="price">$156 <span>/Pax</span></div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://img.freepik.com/free-photo/countryside-houses-near-idyllic-lake-near-mountains_23-2148153677.jpg?t=st=1739446702~exp=1739450302~hmac=d0d596f9f3df0daf260eed2be81984d134823f3a73bdb2150505521d1a8a99ee&w=1380" alt="Osaka Castle">
+                <div class="rating"><i class="fa-solid fa-star"></i> 4.9</div>
+                <div class="row">
+                    <div class="location">
+                        <h3>Osaka Castle</h3>
+                        <span><i class="fa-solid fa-location-dot"></i> Osaka, Japan</span>
+                    </div>
+                    <div class="price">$156 <span>/Pax</span></div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://img.freepik.com/free-photo/countryside-houses-near-idyllic-lake-near-mountains_23-2148153677.jpg?t=st=1739446702~exp=1739450302~hmac=d0d596f9f3df0daf260eed2be81984d134823f3a73bdb2150505521d1a8a99ee&w=1380" alt="Osaka Castle">
+                <div class="rating"><i class="fa-solid fa-star"></i> 4.9</div>
+                <div class="row">
+                    <div class="location">
+                        <h3>Osaka Castle</h3>
+                        <span><i class="fa-solid fa-location-dot"></i> Osaka, Japan</span>
+                    </div>
+                    <div class="price">$156 <span>/Pax</span></div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://img.freepik.com/free-photo/countryside-houses-near-idyllic-lake-near-mountains_23-2148153677.jpg?t=st=1739446702~exp=1739450302~hmac=d0d596f9f3df0daf260eed2be81984d134823f3a73bdb2150505521d1a8a99ee&w=1380" alt="Osaka Castle">
+                <div class="rating"><i class="fa-solid fa-star"></i> 4.9</div>
+                <div class="row">
+                    <div class="location">
+                        <h3>Osaka Castle</h3>
+                        <span><i class="fa-solid fa-location-dot"></i> Osaka, Japan</span>
+                    </div>
+                    <div class="price">$156 <span>/Pax</span></div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://img.freepik.com/free-photo/countryside-houses-near-idyllic-lake-near-mountains_23-2148153677.jpg?t=st=1739446702~exp=1739450302~hmac=d0d596f9f3df0daf260eed2be81984d134823f3a73bdb2150505521d1a8a99ee&w=1380" alt="Osaka Castle">
+                <div class="rating"><i class="fa-solid fa-star"></i> 4.9</div>
+                <div class="row">
+                    <div class="location">
+                        <h3>Osaka Castle</h3>
+                        <span><i class="fa-solid fa-location-dot"></i> Osaka, Japan</span>
+                    </div>
+                    <div class="price">$156/<span>Pax</span></div>
+                </div>
+            </div>
+       </div>
+       <button class="show-more">Show more</button>
+    </div>
+
+    <!-- Adventure Section -->
+    <div class="adventure wrapper">
+        <div class="heading">
+            <h2>Let's go on an adventure</h2>
+            <span>Find and book a great experiences</span>
+        </div>
+        
+        <div class="row">
+            <div class="stamp">
+                <div class="badge">
+                    <i class="fa-solid fa-plane"></i>
+                </div>
+                <img src="https://imgs.search.brave.com/o_I4D_wzTsJA7pC1jgycdXZUkpVnHc0JnoIUmUhCu8U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvOTg2/ODg4MzcwL3Bob3Rv/L2VpZmZlbC10b3dl/ci1yZXRyby1wb3N0/Y2FyZC1zdHlsZWQu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PUtHcS1EVjNRSHVw/bzhzYVVXckxudmpH/S2Rhc2c2WUV2R1lI/RkZWTTZxRlU9" alt="Paris">
+                <h3>PARIS</h3>
+            </div>
+            <div class="stamp">
+                <div class="badge">
+                    <i class="fa-solid fa-plane"></i>
+                </div>
+                <img src="https://imgs.search.brave.com/o_I4D_wzTsJA7pC1jgycdXZUkpVnHc0JnoIUmUhCu8U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvOTg2/ODg4MzcwL3Bob3Rv/L2VpZmZlbC10b3dl/ci1yZXRyby1wb3N0/Y2FyZC1zdHlsZWQu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PUtHcS1EVjNRSHVw/bzhzYVVXckxudmpH/S2Rhc2c2WUV2R1lI/RkZWTTZxRlU9" alt="Paris">
+                <h3>PARIS</h3>
+            </div>
+            <div class="stamp">
+                <i class="fa-solid fa-plane"></i>
+                <img src="https://imgs.search.brave.com/o_I4D_wzTsJA7pC1jgycdXZUkpVnHc0JnoIUmUhCu8U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvOTg2/ODg4MzcwL3Bob3Rv/L2VpZmZlbC10b3dl/ci1yZXRyby1wb3N0/Y2FyZC1zdHlsZWQu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PUtHcS1EVjNRSHVw/bzhzYVVXckxudmpH/S2Rhc2c2WUV2R1lI/RkZWTTZxRlU9" alt="Paris">
+                <h3>PARIS</h3>
+            </div>
+            <div class="stamp">
+                <div class="badge">
+                    <i class="fa-solid fa-plane"></i>
+                </div>
+                <img src="https://imgs.search.brave.com/o_I4D_wzTsJA7pC1jgycdXZUkpVnHc0JnoIUmUhCu8U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvOTg2/ODg4MzcwL3Bob3Rv/L2VpZmZlbC10b3dl/ci1yZXRyby1wb3N0/Y2FyZC1zdHlsZWQu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PUtHcS1EVjNRSHVw/bzhzYVVXckxudmpH/S2Rhc2c2WUV2R1lI/RkZWTTZxRlU9" alt="Paris">
+                <h3>PARIS</h3>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Video Section -->
+    <div class="video wrapper">
+        <div class="header">
+            <span>Book tickets and go now!</span>
+            <button>Book now</button>
+        </div>
+        <video  autoplay loop muted>
+            <source src="video/video.mp4" type="video/mp4">
+        </video>
+        
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="wrapper">
+            <div class="line"></div>
+            <div class="container">
+                <div class="inner">
+                    <div class="brand">
+                        <h2>Tripco</h2>
+                        <p>30 Great Peter St, Westminster,<br> London SW1P 2BU, United Kingdom</p>
+                        <div class="social-icons">
+                            <i class="fa-brands fa-square-facebook"></i>
+                            <i class="fa-brands fa-square-twitter"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <div class="footer-section">
+                            <h3>About</h3>
+                            <ul>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Features</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Plans</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-section">
+                            <h3>Company</h3>
+                            <ul>
+                                <li><a href="#">Why Tripco</a></li>
+                                <li><a href="#">Partner with us</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-section">
+                            <h3>Support</h3>
+                            <ul>
+                                <li><a href="#">Account</a></li>
+                                <li><a href="#">Support center</a></li>
+                                <li><a href="#">Feedback</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter and get exciting offers</p>
+                    <div class="newsletter-box">
+                        <input type="email" placeholder="Enter your email">
+                        <button><i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    <!-- Bottom Gap -->
+     <div style="height: 20px;"></div>
+</body>
+</html>
