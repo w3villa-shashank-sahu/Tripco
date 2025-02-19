@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Navbar</title>
+    <title>Tripco</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/navbar_hero.css">
@@ -58,28 +58,43 @@
                 <div class="last-search">
                     Last Searching <i class="fa-solid fa-chevron-right"></i>
                 </div>
+                <div class="last-search-icon">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                </div>
             </div>
 
             <!-- Search Fields -->
             <div class="search-fields">
-                <div class="field">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <input type="text" placeholder="Bali, Indonesia">
+                <div class="field-title">
+                    Destination
+                    <div class="field">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" placeholder="Bali, Indonesia">
+                    </div>
                 </div>
-                <div class="field">
-                    <i class="fa-solid fa-calendar-days"></i>
-                    <input type="text" placeholder="Sat, 2 Dec 2022">
+                <div class="field-title">
+                    Check-in
+                    <div class="field">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <input type="text" placeholder="Sat, 2 Dec 2022">
+                    </div>
                 </div>
-                <div class="field">
-                    <i class="fa-solid fa-calendar-days"></i>
-                    <input type="text" placeholder="Sun, 3 Dec 2022">
+                <div class="field-title">
+                    Check-out
+                    <div class="field">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <input type="text" placeholder="Sun, 3 Dec 2022">
+                    </div>
                 </div>
-                <div class="field">
-                    <i class="fa-solid fa-user"></i>
-                    <input type="text" placeholder="1 Room, 2 Guests">
+                <div class="field-title">
+                    Room & Guest
+                    <div class="field">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="1 Room, 2 Guests">
+                    </div>
                 </div>
                 <button class="search-btn">
-                    Search <i class="fa-solid fa-search"></i>
+                   <i class="fa-solid fa-search"></i>  Search
                 </button>
             </div>
         </div>
@@ -408,9 +423,10 @@
                     </div>
                 </div>
             </div>
+            
     </footer>
 
     <!-- Bottom Gap -->
-     <div style="height: 20px;"></div>
+    <div style="height: clamp(20px, 15vw, 100px); width: 100%; background-color: rgb(230, 230, 230);"></div>
 </body>
 </html>

@@ -1,6 +1,6 @@
 /* Video Section */
 .video{
-    margin-top: max(5%, 50px);
+    margin-top: max(10%, 50px);
     width: 95%;
     justify-self: center;
     .header{
@@ -8,7 +8,7 @@
         justify-content: space-between;
         align-items: center;
         span{
-            font-size: clamp(15px, 2vw, 25px);
+            font-size: clamp(15px, 2vw, 30px);
             font-weight: bold;
             color: var(--black);
 
@@ -26,13 +26,16 @@
     video{
         margin-top: max(2%, 15px);
         width: 100%;
-        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        aspect-ratio: 18 / 9;
         border-radius: 20px;
     }
 }
 
 /* Footer Section */
 footer{
+    justify-self: center;
+    width: 95%;
     .line{
         width: 100%;
         margin: max(4%, 20px) 0px;
@@ -91,9 +94,12 @@ footer{
         }
         .newsletter{
             flex: 1;
+            /* justify-items: end; */
+            margin-bottom: 30px;
             p{font-size: clamp(12px, 1.2vw, 16px);}
             .newsletter-box{
                 margin-top: 20px;
+                
                 /* border: 1px solid #ccc; */
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
                 width: fit-content;
@@ -125,6 +131,7 @@ footer{
     footer{
         .container{
             flex-direction: column;
+            
         }
     }
 }
