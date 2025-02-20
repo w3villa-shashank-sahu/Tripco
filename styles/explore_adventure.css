@@ -20,7 +20,7 @@
             }
         }
         .right{
-            align-content: end;
+            align-content: center;
             width: 50%;
             font-size: clamp(13px, 1.5vw, 20px);
             color: grey;
