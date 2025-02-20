@@ -208,8 +208,22 @@
 }
 
 /* Responsive */
+
+@media (width < 1420px){
+    .popular-section{
+        margin-bottom: 10%;
+
+    }
+}
+@media (Width < 1100px) {
+    .popular-section{
+        margin-top: 20%;}
+    
+}
+
 @media (width < 768px) {
     .popular-section{
+        margin-top: 25%;
         .card-container{
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows:  1fr 1fr;

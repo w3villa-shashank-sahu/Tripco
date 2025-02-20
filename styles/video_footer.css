@@ -16,7 +16,7 @@
         button{
             background: var(--blue);
             color: white;
-            padding: clamp(8px, 2vw, 10px) clamp(12px, 2vw, 17px);
+            padding: clamp(5px, 1.5vw, 10px) clamp(10px, 2vw, 17px);
             border-radius: 8px;
             font-weight: bold;
             border: none;

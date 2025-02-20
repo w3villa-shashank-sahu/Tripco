@@ -68,8 +68,9 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         height: fit-content;
+        gap: clamp(20px, 3vw, 5%);
         .card {
-            margin: clamp(10px, 40vw, 5%);
+            /* margin: clamp(10px, 40vw, 5%); */
             background: white;
             border-radius: 15px;
             text-align: left;
@@ -141,11 +142,11 @@
 
 /* Adventure Section */
 .adventure{
-    margin-top: max(10%, 50px);
+    margin: max(12%, 50px) 0;
     justify-self: center;
     width: 95%;
     .heading{
-        margin-bottom: max(3%, 20px);
+        margin-bottom: max(10%, 20px);
         text-align: center;
         h2{
             font-size: var(--heading-size);
@@ -159,12 +160,16 @@
         }
     }
     .row{
+        justify-self: center;
+        width: 95%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         justify-items: center;
+        /* margin: 5% 0; */
+        gap: clamp(20px, 4vw, 5%);
         .stamp {
             max-width: 250px;
-            margin: clamp(10px, 40vw, 5%);
+            /* margin: clamp(10px, 40vw, 5%); */
             background: white;
             border-radius: 10px;
             padding: clamp(6px, 1vw ,15px);
@@ -254,6 +259,20 @@
             justify-items: center;
             .stamp{
                 max-width: clamp(150px, 40vw, 200px);
+            }
+        }
+    }
+}
+
+@media (width < 500px) {
+    .adventure{
+        .row{
+            gap: 30px;
+            margin-left: 5%;
+            i{
+                top: clamp(-30px, 8vw, -20px);
+                left: clamp(-30px, 8vw, -20px);
+                /* padding: 10%; */
             }
         }
     }

@@ -6,8 +6,8 @@
 }
 
 :root{
-    --heading-size: clamp(20px, 3vw, 50px);
-    --content-size: clamp(13px, 1.5vw, 20px);
+    --heading-size: clamp(20px, 4vw, 70px);
+    --content-size: clamp(13px, 2vw, 30px);
     --black: #333;
     --blue: #17a2b8;
 }
